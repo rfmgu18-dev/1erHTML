@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog BadBunny</title>
+    <style>
+        body { 
+            margin: 0; padding: 0px; height: 650vh;
+            display: flex; justify-content: center;
+            align-items: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(8, 104, 16);
+        }
+        
+        #contenedor {
+          background-color: #2b9439;
+          padding: 40px;
+          width: 80%;
+          border-radius: 20px;
+          box-shadow: 0 10px 30px rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 6);
+          text-align: center;
+        }
+        #contenedor > img {
+          border: 6px solid; border-color: #15491c; border-radius: 15px;
+        }
+
+       h2 {
+        color: black;
+        font-size: 28px;
+        margin: 40px 0 20px 0;
+        border-bottom: 3px solid rgb(119, 248, 44);
+        padding-bottom: 10px;
+        display: inline-block;
+       } 
+       .ÁLBUMES {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        margin: 30px 0;
+
+       }
+       .album {
+        position: relative;
+        width: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 3px solid #15491c;
+       }
+
+       .ÁLBUMES img {
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        object-fit: cover;
+        border: 3px solid #013107;
+        transition: transform 0.3s, box-shadow 0.3s;
+       }
+       .ÁLBUMES:hover img {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+       }
+       .albumname {
+        position: absolute;
+        bottom: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(54, 141, 46, 0.7);
+        color: #fff;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s, bottom 0.3s;
+        box-shadow: 0 2px 6px rgb(0,0,2);
+        border: 2px solid rgb(0, 0, 2);
+        pointer-events: none;
+       }
+       .ÁLBUMES:hover .albumname {
+        opacity: 1;
+        visibility: visible;
+        bottom: -35px;
+       }
+
+       .links {
+        height: auto;
+
+        padding: 2%;
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+
+    <div id="contenedor">
+        <!-- titulo -->
+         <h1>Blog Bad Bunny</h1>
+         <img src="descargas/Badboport.jpg" alt="Bad Bunny" width="300" height="300" title="El Artista">
+       <hr>
+        <h2>BIOGRAFÍA</h2>
+        <h4>Benito Antonio Martinez Ocasio, mejor conocido como "Bad Bunny" nace el 10 de marzo de 1994 en Bayamón, Puerto Rico, para después ser criado en el barrio Almirante Sur en Vega Baja. </h4>
+        <h4>Benito creció en un hogar de clase media baja en Vega Baja, hijo de un conductor de camiones, Benito Martínez, y una maestra de inglés, Lysaurie Ocasio. Tiene dos hermanos menores, Bernie y Bysael Martínez. Desde muy pequeño mostró un gran interés por la música. A los 5 años, cantaba en el coro de la iglesia católica local, donde permaneció hasta los 13. 
+           Su primer gran contacto con la música urbana fue al recibir un álbum de Vico C como regalo de Navidad. Creció escuchando una mezcla de salsa, merengue, baladas y reggaeton de artistas como Daddy Yankee y Héctor Lavoe, lo que más tarde influiría en su sonido y forma de hacer música.</h4>
+           <h2>INICIOS DE SU CARRERA</h2>
+           <h4>Mientras estudiaba y trabajaba como empaquetador en un supermercado Econo, Benito comenzó a crear su propia música y a publicarla de forma independiente en la plataforma SoundCloud alrededor de 2013 . Su gran oportunidad llegó en 2016 cuando su canción "Diles" llamó la atención del productor DJ Luian, quien lo fichó para su sello Hear This Music, discográfica que acobijaba a gigantes de la época como Arcángel, Anuel AA, De la Ghetto y Ozuna . Poco después, lanzó "Soy Peor" en 2016, un tema que lo posicionó como un pionero de la nueva escena del trap latino y le dio un reconocimiento masivo .</h4>
+<img src="descargas/2016.jpg" alt="BadBo2016" class="album:hover">
+<h1>Bad Bunny 2016</h1>
+
+<h2>ÁLBUMES</h2>
+
+<div class="ÁLBUMES">
+<div class="1">
+  <h3>x100pre (2018)</h3>
+  <img src="descargas/x100pre.jpg" alt="x100pre" width="250" height="250" title="x100pre">
+<span class="albumname">x100pre</span>
+<p>
+  Canción #1 del álbum: Mía (con Drake)
+</p>
+<audio controls>
+<source src="audios/mia-lyrics--letra (1).mp3" type="audio/mpeg">
+</audio>
+</div>
+
+ <div class="2">
+  <h3>Oasis (2019)</h3>
+  <img src="descargas/oasis.jpg" alt="oasis" width="250" height="250" title="Oasis">
+  <span class="albumname">Oasis</span>
+<p>
+  Canción #1 del álbum: La Canción (con J Balvin)
+</p>
+ <audio controls>
+<source src="audios/J Balvin, Bad Bunny - LA CANCIÓN (Audio).mp3" type="audio/mpeg">
+</audio> 
+</div>
+
+ <div class="3">
+  <h3>Yo Hago Lo Que Me Da La Gana (2020)</h3>
+  <img src="descargas/yhlqmdlg.jpg" alt="yhlqmdlg" width="250" height="250" title="yhlqmdlg">
+  <span class="albumname">yhlqmdlg</span>
+<p>
+  Canción #1 del álbum:
+</p>
+<p>
+   Safaera (Con Jowell & Randy)
+</p>
+ <audio controls>
+<source src="audios/Safaera - Bad Bunny x Jowell & Randy x Nengo Flow (Audio Oficial)  YHLQMDLG.mp3" type="audio/mpeg">
+</audio> 
+</div>
+
+<div class="4">
+  <h3>El Último Tour del Mundo (2020)</h3>
+  <img src="descargas/eutdm.jpg" alt="El Último Tour del Mundo" width="250" height="250" title="El Último Tour del Mundo">
+<span class="albumname">El Último Tour del Mundo</span>
+<p>
+  Canción #1 del álbum: DÁKITI (Con Jhay Cortez)
+</p>
+<audio controls>
+<source src="audios/Bad Bunny, Jhay Cortez - DÁKITI (Audio).mp3" type="audio/mpeg">
+</audio>
+</div>
+
+<div class="5">
+  <h3>Las Que No Iban a Salir (2020)</h3>
+  <img src="descargas/lqnias.png" alt="Las Que No Iban a Salir" width="250" height="250" title="Las Que No Iban a Salir">
+<span class="albumname">Las Que No Iban a Salir</span>
+<p>
+  Canción #1 del álbum:
+</p>
+<p>
+   Cómo Se Siente Remix (Con Jhay Cortez)
+</p>
+<audio controls>
+<source src="audios/BAD BUNNY x JHAY CORTEZ - CÓMO SE SIENTE REMIX  LAS QUE NO IBAN A SALIR (Audio Oficial).mp3" type="audio/mpeg">
+</audio>
+</div>
+
+<div class="6">
+  <h3>Un Verano Sin Tí (2022)</h3>
+  <img src="descargas/uvst.jpg" alt="Un Verano Sin Ti" width="250" height="250" title="Un Verano Sin Tí">
+<span class="albumname">Un Verano Sin Tí</span>
+<p>
+  Canción #1 del álbum:
+</p>
+<p>
+   Me Porto Bonito (Con Chencho Corleone)
+</p>
+<audio controls>
+<source src="audios/Bad Bunny, Chencho Corleone  Me Porto Bonito (Letra).mp3" type="audio/mpeg">
+</audio>
+</div>
+
+<div class="7">
+  <h3>Nadie Sabe Lo Que Va a Pasar Mañana (2023)</h3>
+  <img src="descargas/nslqvapm.jpg" alt="Nadie sabe lo que va a pasar mañana" width="250" height="250" title="Nadie Sabe Lo Que Va a Pasar Mañana">
+<span class="albumname">Nadie Sabe Lo Que Va a Pasar Mañana</span>
+<p>
+  Canción #1 del álbum: Monaco
+</p>
+<audio controls>
+<source src="audios/Bad Bunny - Monaco (LetraLyrics)  nadie sabe lo que va a pasar mañana.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+<div class="8">
+  <h3>DeBÍ TiRAR MáS FOToS (2025)</h3>
+  <img src="descargas/debi.jpg" alt="DeBÍ TiRAR MaS FOToS" width="250" height="250" title="DeBÍ TiRAR MáS FOToS">
+<span class="albumname">DeBÍ TiRAR MáS FOToS</span>
+<p>
+  Canción #1 del álbum: BAILE INoLVIDABLE
+</p>
+<audio controls>
+<source src="audios/BAD BUNNY - BAILE INoLVIDABLE (Video Oficial)  DeBÍ TiRAR MáS FOToS.mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+<hr>
+<h2>REDES SOCIALES</h2>
+
+<div class="links">
+
+  <a href="https://open.spotify.com/intl-es/artist/4q3ewBCX7sLwd24euuV69X"
+  target="_blank">
+Spotify 🎵 
+  </a>
+
+<a href="https://www.youtube.com/channel/UCmBA_wu8xGg1OfOkfW13Q0Q"
+  target="_blank">
+     YouTube 📺 
+  </a>
+
+  <a href="https://www.instagram.com/badbunnypr/?hl=es"
+  target="_blank">
+     Instagram 📸
+  </a>
+
+  <h3>Este blog fue creado por:</h3>
+  <a href="https://github.com/rfmgu18-dev/1erHTML.git"
+  target="_blank">
+    Rubén Maldonado.
+  </a>
+</div>
+</div>
+
+
+  </body>
+</html>
