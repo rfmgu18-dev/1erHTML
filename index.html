@@ -284,7 +284,17 @@ Spotify 🎵
   </a>
 </div>
 </div>
-
-
+    <script>
+        const audios = document.querySelectorAll('audio');
+        audios.forEach(audio => {
+            audio.addEventListener('play', function() {
+                audios.forEach(otherAudio => {
+                    if (otherAudio !== this && !otherAudio.paused) {
+                        otherAudio.pause();
+                    }
+                });
+            });
+        });
+    </script>
   </body>
 </html>
