@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog BadBunny</title>
+    <title>Blog 🐰 BadBunny</title>
     <style>
         body { 
             margin: 0; padding: 0px; height: 100%;
@@ -32,7 +32,7 @@
         padding-bottom: 10px;
         display: inline-block;
        } 
-       .ÁLBUMES {
+       .albumes {
         display: flex;
         justify-content: center;
         gap: 25px;
@@ -42,34 +42,44 @@
        }
        .album {
         position: relative;
-        width: 150px;
+        width: 280px;
+        height: 430px;
+        background: rgba(27, 122, 19, 0.7);
+        padding: 20px;
+        text-align: center;
+        box-shadow: #000000;
         object-fit: cover;
-        border-radius: 10px;
-        border: 3px solid #15491c;
+        border-radius: 25px;
+        border: 2px solid #15491c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.55s;
        }
 
-       .ÁLBUMES img {
-        width: 250px;
-        height: 250px;
+       .albumes img {
+        width: 215px;
+        height: 215px;
         border-radius: 10px;
         object-fit: cover;
         border: 3px solid #013107;
         transition: transform 0.3s, box-shadow 0.3s;
+        margin-bottom: 10px;
        }
-       .ÁLBUMES:hover img {
+       .album:hover img {
         transform: scale(1.05);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
        }
        .albumname {
         position: absolute;
-        bottom: -35px;
+        bottom: -70px;
         left: 50%;
         transform: translateX(-50%);
         background-color: rgba(54, 141, 46, 0.7);
         color: #fff;
-        padding: 5px 15px;
+        padding: 8px 10px;
         border-radius: 20px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
         white-space: nowrap;
         opacity: 0;
@@ -78,11 +88,23 @@
         box-shadow: 0 2px 6px rgb(0,0,2);
         border: 2px solid rgb(0, 0, 2);
         pointer-events: none;
+        z-index: 10;
        }
-       .ÁLBUMES:hover .albumname {
+       .albumes:hover .albumname {
         opacity: 1;
         visibility: visible;
         bottom: -35px;
+       }
+       .album h3{
+        font-size: 21px;
+        font-weight: bold;
+        color: #000000;
+        margin: 5px 0;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
        }
 
        .links {
@@ -90,6 +112,25 @@
 
         padding: 2%;
         text-align: center;
+       }
+       .album .cancion {
+        font-size: 16px;
+        display: flex;
+        height: 45px;
+        color: #031600;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5px;
+        margin: 5px 0;
+        
+       }
+       .album .alb {
+       
+        height: 50px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
        }
 
        
@@ -107,116 +148,113 @@
         <h4>Benito creció en un hogar de clase media baja en Vega Baja, hijo de un conductor de camiones, Benito Martínez, y una maestra de inglés, Lysaurie Ocasio. Tiene dos hermanos menores, Bernie y Bysael Martínez. Desde muy pequeño mostró un gran interés por la música. A los 5 años, cantaba en el coro de la iglesia católica local, donde permaneció hasta los 13. 
            Su primer gran contacto con la música urbana fue al recibir un álbum de Vico C como regalo de Navidad. Creció escuchando una mezcla de salsa, merengue, baladas y reggaeton de artistas como Daddy Yankee y Héctor Lavoe, lo que más tarde influiría en su sonido y forma de hacer música.</h4>
            <h2>INICIOS DE SU CARRERA</h2>
-           <h4>Mientras estudiaba y trabajaba como empaquetador en un supermercado Econo, Benito comenzó a crear su propia música y a publicarla de forma independiente en la plataforma SoundCloud alrededor de 2013 . Su gran oportunidad llegó en 2016 cuando su canción "Diles" llamó la atención del productor DJ Luian, quien lo fichó para su sello Hear This Music, discográfica que acobijaba a gigantes de la época como Arcángel, Anuel AA, De la Ghetto y Ozuna . Poco después, lanzó "Soy Peor" en 2016, un tema que lo posicionó como un pionero de la nueva escena del trap latino y le dio un reconocimiento masivo .</h4>
+           <h4>Mientras estudiaba y trabajaba como empaquetador en un supermercado Econo, Benito comenzó a crear su propia música y a publicarla de forma independiente en la plataforma SoundCloud alrededor de 2013 . Su gran oportunidad llegó en 2016 cuando su canción "Diles" llamó la atención del productor DJ Luian, quien lo fichó para su sello Hear This Music, discográfica que acobijaba a gigantes de la época como Arcángel, Anuel AA, De la Ghetto y Ozuna . Poco después, lanzó "Soy Peor" en 2016, un tema que lo posicionó como un pionero de la nueva escena del trap latino y le dió un reconocimiento masivo .</h4>
 <img src="descargas/2016.jpg" alt="BadBo2016" class="album:hover">
 <h1>Bad Bunny 2016</h1>
+<h2></h2>
 
+<a class="alb" href="https://es.wikipedia.org/wiki/Bad_Bunny" target="_blank" >Click aquí para saber más.</a>
+
+
+<hr>
 <h2>ÁLBUMES</h2>
 
-<div class="ÁLBUMES">
-<div class="1">
-  <h3>x100pre (2018)</h3>
+<div class="albumes">
+<div class="album">
+  <h3>x100pre</h3>
   <img src="descargas/x100pre.jpg" alt="x100pre" width="250" height="250" title="x100pre">
-<span class="albumname">x100pre</span>
-<p>
-  Canción #1 del álbum: Mía (con Drake)
-</p>
+<span class="albumname">( 2018 )</span>
+<div class="cancion">Canción #1 del álbum: Mía (con Drake)</div>
+
 <audio controls>
 <source src="audios/mia-lyrics--letra (1).mp3" type="audio/mpeg">
 </audio>
+<a class="alb" href="https://open.spotify.com/intl-es/album/7CjJb2mikwAWA1V6kewFBF" target="_blank" rel="noopener noreferrer">Álbum Completo en Spotify</a>
 </div>
 
- <div class="2">
-  <h3>Oasis (2019)</h3>
+ <div class="album">
+  <h3>Oasis</h3>
   <img src="descargas/oasis.jpg" alt="oasis" width="250" height="250" title="Oasis">
-  <span class="albumname">Oasis</span>
-<p>
-  Canción #1 del álbum: La Canción (con J Balvin)
-</p>
+  <span class="albumname">( 2019 )</span>
+<div class="cancion">Canción #1 del álbum: La Canción (con J Balvin)</div>
  <audio controls>
 <source src="audios/J Balvin, Bad Bunny - LA CANCIÓN (Audio).mp3" type="audio/mpeg">
 </audio> 
+<a class="alb" href="https://open.spotify.com/intl-es/album/6ylFfzx32ICw4L1A7YWNLN" target="_blank" rel="noopener noreferrer">Álbum Completo en Spotify</a>
 </div>
 
- <div class="3">
-  <h3>Yo Hago Lo Que Me Da La Gana (2020)</h3>
-  <img src="descargas/yhlqmdlg.jpg" alt="yhlqmdlg" width="250" height="250" title="yhlqmdlg">
-  <span class="albumname">yhlqmdlg</span>
-<p>
-  Canción #1 del álbum:
-</p>
-<p>
-   Safaera (Con Jowell & Randy)
-</p>
+ <div class="album">
+  <h3>Yo Hago Lo Que Me Da La Gana</h3>
+  <img src="descargas/yhlqmdlg.jpg" alt="yhlqmdlg" width="250" height="250" title="YHLQMDLG">
+  <span class="albumname">( 2020 )</span>
+<div class="cancion">Canción #1 del álbum: Safaera (Con Jowell & Randy y Ñengo Flow)</div>
  <audio controls>
 <source src="audios/Safaera - Bad Bunny x Jowell & Randy x Nengo Flow (Audio Oficial)  YHLQMDLG.mp3" type="audio/mpeg">
 </audio> 
+<a class="alb" href="https://open.spotify.com/intl-es/album/5lJqux7orBlA1QzyiBGti1" target="_blank" rel="noopener noreferrer">Álbum Completo en Spotify</a>
 </div>
 
-<div class="4">
-  <h3>El Último Tour del Mundo (2020)</h3>
+<div class="album">
+  <h3>El Último Tour del Mundo</h3>
   <img src="descargas/eutdm.jpg" alt="El Último Tour del Mundo" width="250" height="250" title="El Último Tour del Mundo">
-<span class="albumname">El Último Tour del Mundo</span>
-<p>
-  Canción #1 del álbum: DÁKITI (Con Jhay Cortez)
-</p>
+<span class="albumname">( 2020 )</span>
+<div class="cancion">Canción #1 del álbum: DÁKITI (Con Jhay Cortez)</div>
 <audio controls>
 <source src="audios/Bad Bunny, Jhay Cortez - DÁKITI (Audio).mp3" type="audio/mpeg">
 </audio>
+<a class="alb" href="https://open.spotify.com/intl-es/album/2d9BCZeAAhiZWPpbX9aPCW" target="_blank" rel="noopener noreferrer">Álbum Completo en Spotify</a>
 </div>
 
-<div class="5">
-  <h3>Las Que No Iban a Salir (2020)</h3>
+<div class="album">
+  <h3>Las Que No Iban a Salir</h3>
   <img src="descargas/lqnias.png" alt="Las Que No Iban a Salir" width="250" height="250" title="Las Que No Iban a Salir">
-<span class="albumname">Las Que No Iban a Salir</span>
-<p>
-  Canción #1 del álbum:
-</p>
-<p>
-   Cómo Se Siente Remix (Con Jhay Cortez)
-</p>
+<span class="albumname">( 2020 )</span>
+<div class="cancion">Canción #1 del álbum: Cómo Se Siente Remix (Con Jhay Cortez)</div>
+
 <audio controls>
 <source src="audios/BAD BUNNY x JHAY CORTEZ - CÓMO SE SIENTE REMIX  LAS QUE NO IBAN A SALIR (Audio Oficial).mp3" type="audio/mpeg">
 </audio>
+<a class="alb" href="https://open.spotify.com/intl-es/album/4gvQO5mEuhbMSrLIuwXkmz" target="_blank" rel="noopener noreferrer">Álbum Completo en Spotify</a>
+
 </div>
 
-<div class="6">
-  <h3>Un Verano Sin Tí (2022)</h3>
+<div class="album">
+  <h3>Un Verano Sin Tí</h3>
   <img src="descargas/uvst.jpg" alt="Un Verano Sin Ti" width="250" height="250" title="Un Verano Sin Tí">
-<span class="albumname">Un Verano Sin Tí</span>
-<p>
-  Canción #1 del álbum:
-</p>
-<p>
-   Me Porto Bonito (Con Chencho Corleone)
-</p>
+<span class="albumname">( 2022 )</span>
+<div class="cancion">Canción #1 del álbum: Me Porto Bonito (Con Chencho Corleone)</div>
+
 <audio controls>
 <source src="audios/Bad Bunny, Chencho Corleone  Me Porto Bonito (Letra).mp3" type="audio/mpeg">
 </audio>
+<a class="alb" href="https://open.spotify.com/intl-es/album/3RQQmkQEvNCY4prGKE6oc5" target="_blank" rel="noopener noreferrer">Álbum Completo en Spotify</a>
+
 </div>
 
-<div class="7">
-  <h3>Nadie Sabe Lo Que Va a Pasar Mañana (2023)</h3>
+<div class="album">
+  <h3>Nadie Sabe Lo Que Va a Pasar Mañana</h3>
   <img src="descargas/nslqvapm.jpg" alt="Nadie sabe lo que va a pasar mañana" width="250" height="250" title="Nadie Sabe Lo Que Va a Pasar Mañana">
-<span class="albumname">Nadie Sabe Lo Que Va a Pasar Mañana</span>
-<p>
-  Canción #1 del álbum: Monaco
-</p>
+<span class="albumname">( 2023 )</span>
+<div class="cancion">Canción #1 del álbum: Monaco</div>
+
 <audio controls>
 <source src="audios/Bad Bunny - Monaco (LetraLyrics)  nadie sabe lo que va a pasar mañana.mp3" type="audio/mpeg">
 </audio>
+<a class="alb" href="https://open.spotify.com/intl-es/album/4FftCsAcXXD1nFO9RFUNFO" target="_blank" rel="noopener noreferrer">Álbum Completo en Spotify</a>
+
 </div>
 
-<div class="8">
-  <h3>DeBÍ TiRAR MáS FOToS (2025)</h3>
+<div class="album">
+  <h3>DeBÍ TiRAR MáS FOToS</h3>
   <img src="descargas/debi.jpg" alt="DeBÍ TiRAR MaS FOToS" width="250" height="250" title="DeBÍ TiRAR MáS FOToS">
-<span class="albumname">DeBÍ TiRAR MáS FOToS</span>
-<p>
-  Canción #1 del álbum: BAILE INoLVIDABLE
-</p>
+<span class="albumname">( 2025 )</span>
+<div class="cancion">Canción #1 del álbum: BAILE INoLVIDABLE</div>
+
 <audio controls>
 <source src="audios/BAD BUNNY - BAILE INoLVIDABLE (Video Oficial)  DeBÍ TiRAR MáS FOToS.mp3" type="audio/mpeg">
 </audio>
+<a class="alb" href="https://open.spotify.com/intl-es/album/5K79FLRUCSysQnVESLcTdb" target="_blank" rel="noopener noreferrer">Álbum Completo en Spotify</a>
+
 </div>
 </div>
 <hr>
