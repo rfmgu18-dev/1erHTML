@@ -1,153 +1,200 @@
-        body { 
-            margin: 0; padding: 0px; height: 100%;
-            display: flex; justify-content: center;
-            align-items: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- background: #000000;
-background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgb(5, 110, 2) 100%);
-        }
-        
-        #contenedor {
-background: #0096d1;
-background: linear-gradient(90deg, rgba(0, 150, 209, 1) 0%, rgb(14, 168, 78) 46%, rgba(212, 167, 30, 1) 100%);
-          padding: 40px;
-          width: 80%;
-          border-radius: 20px;
-          box-shadow: 0 10px 30px rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 6);
-          text-align: center;
-        }
-        #contenedor > img {
-          border: 6px solid; border-color: #15491c; border-radius: 15px;
-        }
+body {
+  margin: 0;
+  padding: 0px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: #000000;
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgb(5, 110, 2) 100%);
+}
 
-       h2 {
-        color: black;
-        font-size: 28px;
-        margin: 40px 0 20px 0;
-        border-bottom: 3px solid rgb(119, 248, 44);
-        padding-bottom: 10px;
-        display: inline-block;
-       } 
-       .albumes {
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-        flex-wrap: wrap;
-        margin: 30px 0;
+#contenedor {
+  background: #0096d1;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 150, 209, 1) 0%,
+    rgb(14, 168, 78) 46%,
+    rgba(212, 167, 30, 1) 100%
+  );
+  padding: 40px;
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 6);
+  text-align: center;
+}
+#contenedor > img {
+  border: 6px solid;
+  border-color: #15491c;
+  border-radius: 15px;
+}
 
-       }
-       .album {
-        position: relative;
-        width: 280px;
-        height: 430px;
-        background: #1e8815b3;
-        padding: 20px;
-        text-align: center;
-        box-shadow: #000000;
-        object-fit: cover;
-        border-radius: 25px;
-        border: 2px solid #15491c;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: transform 0.55s;
-       }
+h2 {
+  color: black;
+  font-size: 28px;
+  margin: 40px 0 20px 0;
+  border-bottom: 3px solid rgb(119, 248, 44);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.albumes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+.album {
+  position: relative;
+  width: 280px;
+  height: 430px;
+  background: #1e8815b3;
+  padding: 20px;
+  text-align: center;
+  box-shadow: #000000;
+  object-fit: cover;
+  border-radius: 25px;
+  border: 2px solid #15491c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.55s;
+}
 
-       .albumes img {
-        width: 215px;
-        height: 215px;
-        border-radius: 10px;
-        object-fit: cover;
-        border: 3px solid #013107;
-        transition: transform 0.3s, box-shadow 0.3s;
-        margin-bottom: 10px;
-       }
-       .album:hover img {
-        transform: scale(1.05);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-       }
-       .albumname {
-        position: absolute;
-        display: inline-block;
-        bottom: 70px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #368d2eb3;
-        color: #fff;
-        padding: 8px 11px;
-        border-radius: 20px;
-        font-size: 12px;
-        font-weight: bold;
-        white-space: nowrap;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s, visibility 0.3s, bottom 0.3s;
-        box-shadow: 0 2px 6px rgb(0,0,2);
-        border: 2px solid rgb(0, 0, 2);
-        pointer-events: none;
-        z-index: 10;
-       }
-       .albumes:hover .albumname {
-        opacity: 1;
-        visibility: visible;
-        bottom: 365px;
-       }
-       .album h3{
-        font-size: 21px;
-        font-weight: bold;
-        color: #000000;
-        margin: 5px 0;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-       }
+.albumes img {
+  width: 215px;
+  height: 215px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid #013107;
+  transition:transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 10px;
+}
+.album:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.albumname {
+  position: absolute;
+  display: inline-block;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #368d2eb3;
+  color: #fff;
+  padding: 8px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s,
+    bottom 0.3s;
+  box-shadow: 0 2px 6px rgb(0, 0, 2);
+  border: 2px solid rgb(0, 0, 2);
+  pointer-events: none;
+  z-index: 10;
+}
+.albumes:hover .albumname {
+  opacity: 1;
+  visibility: visible;
+  bottom: 365px;
+}
+.album h3 {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+  margin: 5px 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
-       .links {
-        height: auto;
-        padding: 2%;
-        text-align: center;
-        color: #000000;
-       }
-       .album .cancion {
-        font-size: 16px;
-        display: flex;
-        height: 45px;
-        color: #031600;
-        align-items: center;
-        justify-content: center;
-        padding: 0 5px;
-        margin: 5px 0;
-        
-       }
-       .album .alb {
-       
-        height: 50px;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       }
+.links {
+  height: auto;
+  padding: 2%;
+  text-align: center;
+  color: #000000;
+}
+.album .cancion {
+  font-size: 16px;
+  display: flex;
+  height: 45px;
+  color: #031600;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  margin: 5px 0;
+}
+.album .alb {
+  height: 50px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-       h1 {
-        color: #000000;
-        font-size: 38px;
-        padding-bottom: 13px;
+h1 {
+  color: #000000;
+  font-size: 38px;
+  padding-bottom: 13px;
+}
+.bowl {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 20px auto;
+}
+.gala {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 20px auto;
+}
+.happy {
+  width: 370px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 20px auto;
+}
+.badbo2022 {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 20px auto;
+}
 
-    
-       }
-         @media (max-width: 688px) {
-          .albumes {
-             flex-direction: column;
-             align-items: center;
-             justify-content: center;
-          }
-          .album {
-             width: 90%;
-          }
-          .albumes:hover .albumname {
-             bottom: 300px;
-          }
-         }
-
-       
+@media (max-width: 550px) {
+  .bowl {
+    width: 325px;
+    height: 250px;
+  }
+  .gala {
+    width: 270px;
+    height: 270px;
+  }
+  .happy {
+    width: 310px;
+    height: 250px;
+  }
+  .badbo2022 {
+    width: 310px;
+    height: 320px;
+  }
+}
